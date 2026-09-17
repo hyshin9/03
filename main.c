@@ -2,14 +2,18 @@
 
 int main(void) 
 {
-    char c, d;
+    int a, b;
+    float c;
 
-    printf("enter a character: ");
-    scanf("%c", &c);
+    printf("enter the numerator: ");
+    scanf("%d", &a);
 
-    d=c+1;
+    printf("enter the denominator: ");
+    scanf("%d", &b);
 
-    printf("the next character of %c (%i) is %c (%i)", c, c, d, d);
+    c=(float)a/b;
+
+    printf("the result of division is %f.\n", c);
 
     return 0;
 }
